@@ -94,7 +94,6 @@ typedef __int64 offset_t;
 #define inline __inline
 
 // Miscellaneous other Windows-related issues...
-#define snprintf _snprintf
 
 #else // _WIN32
 // Other than on Windows, using the C99 integer definitions is what people
