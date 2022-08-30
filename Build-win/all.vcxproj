@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{2a092936-0e55-4b07-966a-869524cbaa87}</ProjectGuid>
+    <RootNamespace>all</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>debug\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>debug\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="es2ts.vcxproj">
+      <Project>{0170b89b-7f2d-4628-a735-4dd8f74cee81}</Project>
+    </ProjectReference>
+    <ProjectReference Include="esdots.vcxproj">
+      <Project>{3e2a9d16-709e-43b6-9669-71a04ad1fded}</Project>
+    </ProjectReference>
+    <ProjectReference Include="esfilter.vcxproj">
+      <Project>{2d0c712f-44cc-4efa-a7c3-12ac98543290}</Project>
+    </ProjectReference>
+    <ProjectReference Include="esmerge.vcxproj">
+      <Project>{d6691c08-2bde-47b1-a9a1-4435c153153a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="esreport.vcxproj">
+      <Project>{750f4c8e-d9a4-4e11-b35b-68df2d2f57b3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="esreverse.vcxproj">
+      <Project>{254f9440-f27f-4e4e-9690-26c600c28fa4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="m2ts2ts.vcxproj">
+      <Project>{a3ea3773-e471-43be-8fba-29781c6bb031}</Project>
+    </ProjectReference>
+    <ProjectReference Include="pcapreport.vcxproj">
+      <Project>{20e86ea5-a6dd-4b9a-ae68-7b72ad32000f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="ps2ts.vcxproj">
+      <Project>{959d8dc0-0be2-4944-a96c-075b0c1ed30a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="psdots.vcxproj">
+      <Project>{375212ce-13e8-4807-bd48-51aac683535e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="psreport.vcxproj">
+      <Project>{4ed9dbe3-25c0-4b48-85b2-8a52813b4cb6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="stream_type.vcxproj">
+      <Project>{00f834b4-85f0-4271-9d34-f10c9dedc355}</Project>
+    </ProjectReference>
+    <ProjectReference Include="test_pes.vcxproj">
+      <Project>{9f64e8b9-5a39-424b-8724-8a5be34c8b85}</Project>
+    </ProjectReference>
+    <ProjectReference Include="ts2es.vcxproj">
+      <Project>{85473a91-7499-4f70-af88-197714e8d102}</Project>
+    </ProjectReference>
+    <ProjectReference Include="ts2ps.vcxproj">
+      <Project>{4960e610-ea46-4fc4-9d33-561f65313c6e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="tsdvbsub.vcxproj">
+      <Project>{cf3d494f-f9ac-4c3e-9eed-6d57383fc78f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="tsinfo.vcxproj">
+      <Project>{7e10a152-b82c-4b9e-b40d-97f58eb52de8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="TSplay.vcxproj">
+      <Project>{76e34a05-a9b9-47a5-8c42-3897aa59de02}</Project>
+    </ProjectReference>
+    <ProjectReference Include="tsreport.vcxproj">
+      <Project>{c3cf6b32-6a2b-4c49-be31-e1c48574d51a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="tsserve.vcxproj">
+      <Project>{98326b87-8c72-4bac-86af-5ae1b39b35d5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="ts_packet_insert.vcxproj">
+      <Project>{fbd9ebea-77db-47a2-9b79-2fd6f7c965f0}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
